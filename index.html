@@ -4,27 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Helllo Vite!</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/" title="Go back home">Curriculum Vitae</a></h1>
+    <title>Hello Vite!</title>
 
-      <nav>
-        <ul>
-          <li>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/main.css">
+  </head>
+
+  <body>
+    <header class="menu">
+      <h1 class="menu__header">
+        <a href="/" title="Go back home">Curriculum Vitae</a>
+      </h1>
+
+      <nav class="menu__nav">
+        <button class="menu__nav-button">Menu</button>
+        <ul class="menu__nav-list">
+          <li class="menu__nav-list-item">
             <a href="#contact" title="Go to contact">Contact</a>
           </li>
-          <li>
+          <li class="menu__nav-list-item">
             <a href="#jobs" title="Go to jobs">Jobs</a>
           </li>
-          <li>
+          <li class="menu__nav-list-item">
             <a href="#education" title="Go to education">Education</a>
           </li>
-          <li>
+          <li class="menu__nav-list-item">
             <a href="#skills" title="Go to skills">Skills</a>
           </li>
-          <li>
+          <li class="menu__nav-list-item">
             <a href="#references" title="Go to references">References</a>
           </li>
         </ul>
@@ -39,116 +50,120 @@
         </h1>
       </header>
 
-      <section id="contact">
-        <header>
-          <h1>Contact</h1>
-        </header>
+      <div class="first_column">
+        <section id="contact">
+          <header>
+            <h1>Contact</h1>
+          </header>
 
-        <address>
-          <ul>
-            <li>
-              e-mail:
-              <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send an e-mail">
-                offie.the.cat@upsl.edu.pl
-              </a>
-            </li>
-            <li>
-              phone:
-              <a href="tel:+48509382566" title="Make a call">
-                +48 509382566
-              </a>
-            </li>
-            <li>
-              address:
-              <a href="https://maps.app.goo.gl/17sEk6azirLbVDdPA" title="Show location using Google Maps" target="_blank">
-                ul. Kozietulskiego 7, 76-200 Słupsk
-              </a>
-            </li>
-          </ul>
-        </address>
-      </section>
+          <address>
+            <ul>
+              <li>
+                e-mail:
+                <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send an e-mail">
+                  offie.the.cat@upsl.edu.pl
+                </a>
+              </li>
+              <li>
+                phone:
+                <a href="tel:+48509382566" title="Make a call">
+                  +48 509382566
+                </a>
+              </li>
+              <li>
+                address:
+                <a href="https://maps.app.goo.gl/17sEk6azirLbVDdPA" title="Show location using Google Maps" target="_blank">
+                  ul. Kozietulskiego 7, 76-200 Słupsk
+                </a>
+              </li>
+            </ul>
+          </address>
+        </section>
 
-      <section id="jobs">
-        <header>
-          <h1>Professional Experience</h1>
-        </header>
-
-        <ul>
-          <li>
-            <h2>from 2024 - The Basement Night Club - promoter</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
-            </p>
-          </li>
-          <li>
-            <h2>from 2023 to 2024 - The Basement Night Club - intern</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="education">
-        <header>
-          <h1>Education history</h1>
-        </header>
-
-        <ul>
-          <li>
-            <h2>2024 - Cat Univeristy - master’s degree</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
-            </p>
-          </li>
-          <li>
-            <h2>2023 - 2024 - High-School of Cat Valley - SAT</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <header>
-          <h1>Skills</h1>
+        <section id="education">
+          <header>
+            <h1>Education history</h1>
+          </header>
 
           <ul>
-            <li>Sleeping - 100%</li>
-            <li>Purring - 90%</li>
-            <li>Meowing - 10%</li>
+            <li>
+              <h2>2024 - Cat Univeristy - master’s degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
+              </p>
+            </li>
+            <li>
+              <h2>2023 - 2024 - High-School of Cat Valley - SAT</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
+              </p>
+            </li>
           </ul>
-        </header>
-      </section>
+        </section>
 
-      <section id="references">
-        <header>
-          <h1>References</h1>
-        </header>
+        <section id="skills">
+          <header>
+            <h1>Skills</h1>
 
-        <ul>
-          <li>
-            <h2>Jakub Bilski</h2>
-            <address>
-              <ul>
-                <li>
-                  e-mail:
-                  <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send an e-mail">
-                    jakub.bilski@upsl.edu.pl
-                  </a>
-                </li>
-                <li>
-                  phone:
-                  <a href="tel:+48509382566" title="Make a call">
-                    +48 509382566
-                  </a>
-                </li>
-              </ul>
-            </address>
-          </li>
-        </ul>
-      </section>
+            <ul>
+              <li>Sleeping - 100%</li>
+              <li>Purring - 90%</li>
+              <li>Meowing - 10%</li>
+            </ul>
+          </header>
+        </section>
+      </div>
+
+      <div class="second_column">
+        <section id="jobs">
+          <header>
+            <h1>Professional Experience</h1>
+          </header>
+
+          <ul>
+            <li>
+              <h2>from 2024 - The Basement Night Club - promoter</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
+              </p>
+            </li>
+            <li>
+              <h2>from 2023 to 2024 - The Basement Night Club - intern</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dolorem ducimus et ex illo itaque neque non tenetur voluptatum. Ab aperiam asperiores consequuntur eaque exercitationem quae, ullam velit voluptatum?
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="references">
+          <header>
+            <h1>References</h1>
+          </header>
+
+          <ul>
+            <li>
+              <h2>Jakub Bilski</h2>
+              <address>
+                <ul>
+                  <li>
+                    e-mail:
+                    <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send an e-mail">
+                      jakub.bilski@upsl.edu.pl
+                    </a>
+                  </li>
+                  <li>
+                    phone:
+                    <a href="tel:+48509382566" title="Make a call">
+                      +48 509382566
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer>
