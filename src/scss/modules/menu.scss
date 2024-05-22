@@ -5,31 +5,37 @@
   color: white;
   width: 100%;
   max-width: 1000px;
-  /*margin: auto;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
 
-.menu__nav-button {
-  display: block;
-}
+  &__nav {
+    &-button {
+      display: block;
 
-.menu__nav-list {
-  display: none;
-}
+      @media (min-width: $breakpoint) {
+        display: none;
+      }
+    }
 
-.menu a {
-  color: white;
-}
+    &-list {
+      display: none;
 
-@media (min-width: $breakpoint) {
-  .menu__nav-button {
-    display: none;
+      @media (min-width: $breakpoint) {
+        display: block;
+      }
+
+      &--active {
+        display: block;
+      }
+
+      &-item {
+      }
+    }
   }
 
-  .menu__nav-list {
-    display: block;
+  a {
+    color: white;
   }
 }
