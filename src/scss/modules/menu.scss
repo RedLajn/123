@@ -21,9 +21,17 @@
 
     &-list {
       display: none;
+      position: absolute;
+      left: 0;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      background-color: #cff;
+      color: #000;
 
       @media (min-width: $breakpoint) {
-        display: block;
+        display: flex;
+        position: static;
       }
 
       &--active {
@@ -31,11 +39,25 @@
       }
 
       &-item {
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #000;
+          padding: 10px;
+          text-decoration: none;
+          border-bottom: 1px solid #000;
+          min-height: 48px;
+
+          &:after {
+            content: '>';
+
+            @media (min-width: $breakpoint) {
+              display: none;
+            }
+          }
+        }
       }
     }
-  }
-
-  a {
-    color: white;
   }
 }
