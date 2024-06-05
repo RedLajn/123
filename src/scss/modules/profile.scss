@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.profile {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    &-image {
+      filter: sepia(100%) hue-rotate(190deg) saturate(200%);
+      border-radius: 50%;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+    }
+
+    &-text {
+      font-weight: normal;
+      line-height: 2em;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
