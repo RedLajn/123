@@ -54,6 +54,12 @@
         display: block;
       }
 
+      &--active {
+        &:after {
+          background-image: url("/img/icons/close.svg");
+        }
+      }
+
       @media (min-width: $breakpoint) {
         display: none;
       }

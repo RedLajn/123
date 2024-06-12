@@ -4,3 +4,18 @@ $breakpoint: 1024px;
 $primaryColor: #fff;
 $secondaryColor: #46556d;
 $ternaryColor: #000;
+
+%headerType1 {
+  h1 {
+    margin: 0 0 20px 0;
+    padding: 0 40px 5px 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid $primaryColor;
+  }
+}
+
+%blockType1 {
+  margin: 40px 0 0 40px;
+  padding: 0;
+  color: $primaryColor;
+}

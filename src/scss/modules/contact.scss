@@ -1,0 +1,57 @@
+@use 'variables' as *;
+
+.contact {
+  @extend %blockType1;
+
+  &__header {
+    @extend %headerType1;
+  }
+
+  &__address {
+    font-style: normal;
+
+    &-list {
+      margin: 0 40px 0 0;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        margin: 20px 0;
+
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+          text-transform: capitalize;
+        }
+
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          color: $primaryColor;
+
+          &:before {
+            content: '';
+            display: block;
+            background-color: $primaryColor;
+            width: 1em;
+            height: 1em;
+            margin-right: 0.5em;
+          }
+        }
+
+        &:nth-child(1) a:before {
+          mask-image: url("/img/icons/email.svg");
+        }
+        &:nth-child(2) a:before {
+          mask-image: url("/img/icons/phone.svg");
+        }
+        &:nth-child(3) a:before {
+          mask-image: url("/img/icons/map-marker.svg");
+        }
+      }
+    }
+  }
+}

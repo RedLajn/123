@@ -1,0 +1,35 @@
+@use 'variables' as *;
+
+.jobs {
+  @extend %blockType1;
+
+  &__header {
+    @extend %headerType1;
+  }
+
+  &__list {
+    margin: 0 40px 0 5px;
+    padding: 0 0 0 16px;
+    list-style: none;
+    border-left: 2px solid $primaryColor;
+
+    &-item {
+      margin: 20px 0;
+
+      &:before {
+        content: '';
+        display: block;
+        height: 10px;
+        width: 10px;
+        background-color: $primaryColor;
+        position: absolute;
+        margin-left: -22px;
+        mask-image: url("/img/icons/circle.svg");
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
