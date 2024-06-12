@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+main {
+  color: $primaryColor;
+
+  @media (min-width: $breakpoint) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.first_column {
+  h1 {
+    border-color: $primaryColor;
+  }
+
+  @media (min-width: $breakpoint) {
+    width: 35%;
+  }
+}
+
+.second_column {
+  @media (min-width: $breakpoint) {
+    width: 65%;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
+}

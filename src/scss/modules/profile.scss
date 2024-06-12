@@ -4,6 +4,10 @@
   background-color: $secondaryColor;
   color: $primaryColor;
 
+  @media (min-width: $breakpoint) {
+    width: 100%;
+  }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -11,12 +15,20 @@
     align-items: center;
     font-size: 2rem;
 
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+    }
+
     &-image {
       filter: sepia(100%) hue-rotate(190deg) saturate(200%);
       border-radius: 50%;
       object-fit: cover;
       width: 200px;
       height: 200px;
+
+      @media (min-width: $breakpoint) {
+
+      }
     }
 
     &-text {
@@ -25,6 +37,14 @@
 
       span {
         font-weight: bold;
+      }
+
+      @media (min-width: $breakpoint) {
+        display: block;
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        height: 100%;
+        width: 65%;
       }
     }
   }
